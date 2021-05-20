@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailStoryActivity"
+    android:orientation="horizontal"
+    android:background="@drawable/pink_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src ="@drawable/ic_baseline_arrow_back_24"
+            android:layout_gravity="left"
+            android:background="@drawable/btn_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.064" />
+
+        <View
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/maudywisuda" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/colorText"
+            android:textSize="30dp"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:text="Ayunda Faza Maudy"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/header_view1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRowBtn"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_view"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:gravity="left"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text="Nama lahir" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:text="Nama lain" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Lahir" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Pekerjaan" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Tahun aktif" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Tinggi badan" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Ibu" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Ayah" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Almamater" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_view"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:text=":" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_view"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Ayundy Faza Maudy" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:text="Maudy Ayunda" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="19 Desember 1994 (umur 26)" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Aktris, penyanyi, penulis, dan model" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="2006-sekarang" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="1,65 m (5 ft 5 in)" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Muren Murdjoko Jasmedi" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Didit Jasmedi R. Irawan" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorText"
+                        android:justificationMode="inter_word"
+                        android:layout_gravity="center"
+                        android:text="Universitas Oxford, Stanford" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/tableRowBtn2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorText"
+                    android:justificationMode="inter_word"
+                    android:layout_gravity="center"
+                    android:text="Debutnya dalam dunia hiburan tanah air diawali lewat film Untuk Rena yang dibintanginya bersama Surya Saputra pada tahun 2006. Dalam film tersebut, Maudy berperan sebagai Rena. Karena perannya di film tersebut, Maudy dianugerahkan penghargaan Aktris Utama Terpilih oleh Festival Film Jakarta 2006 di usianya yang baru menginjak 11 tahun." />
+            </LinearLayout>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/btnCourses1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tampilkan info selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:fontFamily="times"
+            android:layout_gravity="right"
+            android:gravity="right"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/cCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="30dp"
+                android:padding="5dp"
+                android:fontFamily="times"
+                android:layout_gravity="center_vertical|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCourses1"
+                app:layout_constraintVertical_bias="0.064"
+                tools:ignore="NotSibling" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

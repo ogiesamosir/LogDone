@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KuisCovidActivity"
+    android:background="@drawable/pink_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tools:context=".KuisCovidActivity"
+        >
+
+        <TextView
+            android:id="@+id/txtQuestionNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="Score : 0"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/txtCorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Correct : 0"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/txtWrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wrong : 0"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:30"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtQuestionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/question_container_bg"
+                android:fontFamily="@font/montserrat"
+                android:justificationMode="inter_word"
+                android:padding="20dp"
+                android:text="Owala Ga Bagus namanya adalah sebuah organisasi ?"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:freezesText="true"
+                    android:text="Pendidikan"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:background="@drawable/default_option_bg"
+                    android:padding="16dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:freezesText="true"
+                    android:text="Pemerintahan"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:background="@drawable/default_option_bg"
+                    android:padding="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:freezesText="true"
+                    android:text="Kesehatan"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:background="@drawable/default_option_bg"
+                    android:padding="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:freezesText="true"
+                    android:text="Tekstil"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:background="@drawable/default_option_bg"
+                    android:padding="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="90dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/button_confirm"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:background="@drawable/custom_button"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

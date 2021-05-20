@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pink_bg"
+    android:gravity="center"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil : "
+        android:textColor="#000"
+        android:fontFamily="times"
+        android:textSize="36sp"
+        android:padding="13dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_Highscore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Skor tertinggi"
+            android:textColor="#000"
+            android:fontFamily="times"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            />
+        <TextView
+            android:id="@+id/tv_Question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Total Pertanyaan"
+            android:textColor="#000"
+            android:fontFamily="times"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            />
+        <TextView
+            android:id="@+id/tv_correct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Benar"
+            android:textColor="#000"
+            android:fontFamily="times"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            />
+        <TextView
+            android:id="@+id/tv_wrong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Salah"
+            android:textColor="#000"
+            android:fontFamily="times"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnPlayAgain"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawab Ulang"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/montserrat" />
+
+                <Button
+                    android:id="@+id/btnMainMenu"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Awal"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/custom_button"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+            </TableRow>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

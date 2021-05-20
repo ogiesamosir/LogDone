@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:orientation="horizontal"
+    android:background="@drawable/pink_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src ="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.064" />
+
+        <View
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/corona" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/colorText"
+            android:textSize="25dp"
+            android:fontFamily="times"
+            android:textAlignment="center"
+            android:text="INFORMASI DAN PENGETAHUAN COVID-19"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/header_view1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <Button
+            android:id="@+id/btnCourses1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round_primary_bg"
+            android:text="Tampilkan Informasi Covid"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/cCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="30dp"
+                android:padding="5dp"
+                android:fontFamily="times"
+                android:layout_gravity="center_vertical|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCourses1"
+                app:layout_constraintVertical_bias="0.064"
+                tools:ignore="NotSibling" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
